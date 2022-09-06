@@ -25,9 +25,19 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  padding: 94px 0;
 }
 
 /* Logo */
+
+.page-header > .container {
+  outline: 2px solid tomato;
+}
 
 .logo {
   color: var(--title-text-color);
@@ -88,24 +98,35 @@ ul {
 
 .hero-title {
   color: var(--primary-white-color);
-  background-color: var(--primary-bg-color);
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding: 200px 452px 280px;
 }
 .hero {
-  outline: 2px solid tomato;
+  text-align: center;
+  background-color: var(--primary-bg-color);
+  width: 1600px;
+  height: 600px;
 }
 
 /* Feature */
 
 .feature-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+}
+.feature-list p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .feature-list .text {
@@ -120,7 +141,9 @@ ul {
 
 /* Work */
 
-.work-list .work-title {
+.work-title,
+.work-title-team {
+  margin-top: 0;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -135,6 +158,8 @@ ul {
 /* Team */
 
 .team-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -142,12 +167,27 @@ ul {
 }
 
 .team-list .profession {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
 }
+.work-team-list {
+  background-color: var(--section-bg-color);
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
+}
 
 /* Project */
+
+.project {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+}
 
 .project-link .project {
   background-color: var(--section-bg2-color);
@@ -167,8 +207,14 @@ ul {
   line-height: 1.9;
 }
 
-.project .link {
-  text-decoration: none;
+.project-link {
+  background-color: aquamarine;
+  outline: 2px solid tomato;
+}
+
+.project-list {
+  margin-top: 0;
+  margin-bottom: 34px;
 }
 
 .project-list .button.secondary:hover,
@@ -177,10 +223,25 @@ ul {
   background-color: var(--accent-color);
 }
 
-.content-title-page,
+.project-primary-title,
 .feature-title {
+  margin: 0;
   visibility: hidden;
   height: 0;
+}
+
+.project-title {
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+.projects {
+  outline: 2px solid tomato;
+}
+
+.filter {
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 /* Button */
@@ -197,7 +258,7 @@ ul {
   padding: 6px 22px;
 }
 
-.button.primary {
+.button-hero {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-weight: 700;
@@ -205,7 +266,8 @@ ul {
   line-height: 1.9;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding: 11px 32px;
+  padding: 10px 32px;
+  text-align: center;
 }
 
 .button.primary.current {
@@ -215,12 +277,15 @@ ul {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   padding: 6px 25px;
+  text-align: center;
 }
 
 /* Footer */
 
 .address-section {
   background-color: var(--primary-bg-color);
+  outline: 2px solid tomato;
+  width: 1600px;
 }
 
 .logo-footer {
@@ -264,9 +329,7 @@ ul {
 }
 
 .container {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
