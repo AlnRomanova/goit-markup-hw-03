@@ -58,7 +58,24 @@ ul {
 
 /* Site-nav */
 
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -78,13 +95,24 @@ ul {
 /* Contacts */
 
 .contacts {
+  display: flex;
+  margin-left: auto;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
 }
 
+.contacts .item + .item {
+  margin-left: 50px;
+}
+
 .phone-link,
 .mail-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   text-decoration: none;
 }
@@ -110,8 +138,6 @@ ul {
 .hero {
   text-align: center;
   background-color: var(--primary-bg-color);
-  width: 1600px;
-  height: 600px;
 }
 
 /* Feature */
@@ -135,14 +161,22 @@ ul {
   line-height: 1.7;
 }
 
-.feature-list {
-  outline: 2px solid tomato;
+.feature {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature .item {
+  width: 270px;
+}
+
+.feature .item + .item {
+  margin-left: 30px;
 }
 
 /* Work */
 
-.work-title,
-.work-title-team {
+.work-title {
   margin-top: 0;
   color: var(--title-text-color);
   font-weight: 700;
@@ -166,7 +200,7 @@ ul {
   line-height: 1.2;
 }
 
-.team-list .profession {
+.profession {
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 400;
@@ -213,10 +247,15 @@ ul {
 }
 
 .project-list {
+  display: flex;
+  justify-content: center;
   margin-top: 0;
   margin-bottom: 34px;
 }
 
+.project-list .item + .item {
+  margin-left: 8px;
+}
 .project-list .button.secondary:hover,
 .project-list .button.secondary:focus {
   color: var(--primary-white-color);
